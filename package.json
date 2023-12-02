@@ -1,0 +1,25 @@
+{
+  "name": "weather-app-react-tailwind-api",
+  "version": "1.0.0",
+  "description": "API for weather app created with React and Tailwind CSS",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "clear && nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jesselessa/weather-app-react-tailwind-api.git"
+  },
+  "author": "Jessica Elessa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jesselessa/weather-app-react-tailwind-api/issues"
+  },
+  "homepage": "https://github.com/jesselessa/weather-app-react-tailwind-api#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
+  }
+}
