@@ -2,6 +2,7 @@ import * as dotenv from "dotenv";
 dotenv.config();
 import express from "express";
 import cors from "cors";
+import fetch from "node-fetch";
 
 const app = express();
 const port = process.env.PORT;
@@ -19,18 +20,11 @@ app.get("/data/:city", (req, res) => {
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
 
   fetch(url)
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error(`HTTP error - Status: ${response.status}`);
-      }
-      return response.json();
-    })
-    .then((data) => {
-      res.json(data);
-    })
+    .then((res) => res.json())
+    .then((data) => res.json(data))
     .catch((error) => {
-      console.error(error);
-      res.json({ error: "Error fetching data from OpenWeatherMap API" });
+      console.log(error);
+      return res.json(error);
     });
 });
 
