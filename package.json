@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jesselessa/weather-app-react-tailwind-api.git"
+    "url": "https://github.com/jesselessa/weather-app-react-tailwind-api.git"
   },
   "author": "Jessica Elessa",
   "license": "ISC",
