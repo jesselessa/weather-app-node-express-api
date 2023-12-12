@@ -5,7 +5,7 @@ import cors from "cors";
 import fetch from "node-fetch";
 
 const app = express();
-const port = process.env.PORT;
+const PORT = process.env.PORT;
 const host = process.env.HOST;
 
 //-------------- MIDDLEWARES ---------------//
@@ -35,5 +35,5 @@ app.get("*", (_req, res) => {
 
 //------------- START SERVER ---------------//
 app.listen(port, () => {
-  console.log(`Server listening at http://${host}:${port}`);
+  console.log(`Server listening at http://${host}:${PORT}`);
 });
