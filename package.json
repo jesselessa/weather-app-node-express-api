@@ -1,5 +1,5 @@
 {
-  "name": "weather-app-react-tailwind-api",
+  "name": "weather-app-node-express-api",
   "version": "1.0.0",
   "description": "API for weather app created with React and Tailwind CSS",
   "main": "server.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jesselessa/weather-app-react-tailwind-api.git"
+    "url": "https://github.com/jesselessa/weather-app-node-express-api.git"
   },
   "author": "Jessica Elessa",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jesselessa/weather-app-react-tailwind-api/issues"
+    "url": "https://github.com/jesselessa/weather-app-node-express-api/issues"
   },
-  "homepage": "https://github.com/jesselessa/weather-app-react-tailwind-api#readme",
+  "homepage": "https://github.com/jesselessa/weather-app-node-express-api#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
