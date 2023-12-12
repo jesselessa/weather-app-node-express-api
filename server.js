@@ -5,7 +5,7 @@ import cors from "cors";
 import fetch from "node-fetch";
 
 const app = express();
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 5000;
 const host = process.env.HOST;
 
 //-------------- MIDDLEWARES ---------------//
