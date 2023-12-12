@@ -30,7 +30,7 @@ app.get("/data/:city", (req, res) => {
     .then((data) => res.json(data))
     .catch((error) => {
       console.log(error);
-      return res.json({ error: error, status: 500 });
+      return res.json(error);
     });
 });
 
