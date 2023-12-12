@@ -8,8 +8,14 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 const host = process.env.HOST;
 
-//-------------- MIDDLEWARES ---------------//
-app.use(cors());
+//-------------- MIDDLEWARE ---------------//
+app.use(
+  cors({
+    origin: "https://jesselessa-weather-app-react-tailwind.netlify.app",
+    methods: "GET",
+    optionsSuccessStatus: 204,
+  })
+);
 
 //---------------- ROUTES ------------------//
 
