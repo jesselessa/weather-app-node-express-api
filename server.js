@@ -24,7 +24,7 @@ app.get("/data/:city", (req, res) => {
     .then((data) => res.json(data))
     .catch((error) => {
       console.log(error);
-      return res.json(error);
+      return res.json({ error: error, status: 500 });
     });
 });
 
@@ -34,6 +34,6 @@ app.get("*", (_req, res) => {
 });
 
 //------------- START SERVER ---------------//
-app.listen(port, () => {
+app.listen(PORT, () => {
   console.log(`Server listening at http://${host}:${PORT}`);
 });
