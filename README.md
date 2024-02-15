@@ -23,12 +23,12 @@ The weather data are fetched from **OpenWeatherMap API**, whose documentation ca
 
 ## Run the project locally
 
-1. Open your terminal and navigate to the location where you want the local repository to be copied.
+1. Open your terminal and navigate to the location where you want the local repository to be copied
 2. Clone the repository : `git clone https://github.com/jesselessa/weather-app-node-express-api.git`
 3. Navigate to the project directory : `cd weather-app-node-express-api`
 4. Inside the project directory :
-    - Install the dependencies : `npm install` ;
-    - Start the Express server : `node server.js` .
+    - Install the dependencies : `npm install` 
+    - Start the Express server : `node server.js`
   
 Do not forget to configure the **environment variables** in the project for it to work properly !
 
@@ -42,7 +42,7 @@ To stay updated with the project latest changes, you can pull them from the repo
 
 ## Contact
 
-For inquiries, contact me via [LinkedIn](https://www.linkedin.com/in/jessica-elessa/).
+For inquiries, you can contact me via [LinkedIn](https://www.linkedin.com/in/jessica-elessa/).
 
 ---
 
