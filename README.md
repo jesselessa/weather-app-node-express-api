@@ -27,8 +27,8 @@ The weather data are fetched from **OpenWeatherMap API**, whose documentation ca
 2. Clone the repository : `git clone https://github.com/jesselessa/weather-app-node-express-api.git`
 3. Navigate to the project directory : `cd weather-app-node-express-api`
 4. Inside the project directory :
-    - Install the dependencies : `npm install`
-    - Start the Express server : `node server.js`
+    - Install the dependencies : `npm install` ;
+    - Start the Express server : `node server.js` .
   
 Do not forget to configure the **environment variables** in the project for it to work properly !
 
