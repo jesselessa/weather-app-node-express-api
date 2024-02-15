@@ -30,7 +30,7 @@ The weather data are fetched from **OpenWeatherMap API**, whose documentation ca
     - Install the dependencies : `npm install`
     - Start the Express server : `node server.js`
   
-Do not forget to complete the **environment variables** values in the project to make it work properly !
+Do not forget to configure the **environment variables** in the project for it to work properly !
 
 ## Contributing
 
