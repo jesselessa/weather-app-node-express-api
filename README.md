@@ -1,6 +1,6 @@
 # weather-app-node-express-api
 
-This project is the API for a [weather application that I created with React and Tailwind CSS](https://github.com/jesselessa/weather-app-react-tailwind-client).
+This project is a custom API for a [weather application that I created with React and Tailwind CSS](https://github.com/jesselessa/weather-app-react-tailwind-client).
 
 ## Table of Contents
 

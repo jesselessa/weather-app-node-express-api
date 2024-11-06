@@ -21,7 +21,6 @@ app.use(
 );
 
 //---------------- ROUTES ------------------//
-
 //* Get data from any city
 app.get("/data/:city", (req, res) => {
   const city = req.params.city;
