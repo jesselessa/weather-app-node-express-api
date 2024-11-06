@@ -11,23 +11,12 @@ const host = process.env.HOST;
 //-------------- MIDDLEWARES ---------------//
 app.use(express.json());
 
-// Set CORS headers
-app.use((_req, res, next) => {
-  res.setHeader(
-    "Access-Control-Allow-Origin",
-    "https://jesselessa-weather-app-react-tailwind.netlify.app"
-  );
-  res.setHeader("Access-Control-Allow-Methods", "GET, OPTIONS");
-  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
-  next();
-});
-
-// Configurate CORS 
+// Configure CORS
 app.use(
   cors({
     origin: "https://jesselessa-weather-app-react-tailwind.netlify.app",
     methods: ["GET"],
-    optionsSuccessStatus: 204,
+    optionsSuccessStatus: 204, // 204 = success but server doesn't return any data in response (contrary to status code 200)
   })
 );
 
@@ -50,7 +39,7 @@ app.get("/data/:city", (req, res) => {
 
 //* Handle errors
 app.get("*", (_req, res) => {
-  res.json({ error: "Error 404 - Page not found" });
+  res.json({ error: "Error 404 - Not found" });
 });
 
 //------------- START SERVER ---------------//
