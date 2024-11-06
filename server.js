@@ -5,16 +5,28 @@ import cors from "cors";
 import fetch from "node-fetch";
 
 const app = express();
-const PORT = process.env.PORT
+const PORT = process.env.PORT;
 const host = process.env.HOST;
 
-//-------------- MIDDLEWARE ---------------//
-app.use(express.json())
+//-------------- MIDDLEWARES ---------------//
+app.use(express.json());
 
+// Set CORS headers
+app.use((_req, res, next) => {
+  res.setHeader(
+    "Access-Control-Allow-Origin",
+    "https://jesselessa-weather-app-react-tailwind.netlify.app"
+  );
+  res.setHeader("Access-Control-Allow-Methods", "GET, OPTIONS");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+  next();
+});
+
+// Configurate CORS 
 app.use(
   cors({
     origin: "https://jesselessa-weather-app-react-tailwind.netlify.app",
-    methods: "GET",
+    methods: ["GET"],
     optionsSuccessStatus: 204,
   })
 );
