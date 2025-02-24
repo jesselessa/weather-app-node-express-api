@@ -5,8 +5,7 @@ import cors from "cors";
 import fetch from "node-fetch";
 
 const app = express();
-const PORT = process.env.PORT;
-const host = process.env.HOST;
+const port = process.env.PORT;
 
 //-------------- MIDDLEWARES ---------------//
 app.use(express.json());
@@ -42,6 +41,6 @@ app.get("*", (_req, res) => {
 });
 
 //------------- START SERVER ---------------//
-app.listen(PORT, () => {
-  console.log(`Server listening at http://${host}:${PORT}`);
+app.listen(port, () => {
+  console.log(`Server listening on port ${port}`);
 });
