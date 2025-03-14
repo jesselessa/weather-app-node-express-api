@@ -13,7 +13,7 @@ app.use(express.json());
 // Configure CORS
 app.use(
   cors({
-    origin: "https://jesselessa-weather-app-react-tailwind.netlify.app",
+    origin: process.env.CLIENT_URL,
     methods: ["GET"],
     optionsSuccessStatus: 204, // 204 = success but server doesn't return any data in response (contrary to status code 200)
   })
