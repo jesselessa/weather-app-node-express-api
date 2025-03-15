@@ -21,7 +21,7 @@ app.use(
 
 //---------------- ROUTES ------------------//
 //* Get data from any city
-app.get("/data/:city", (req, res) => {
+app.get("api/data/:city", (req, res) => {
   const city = req.params.city;
   const apiKey = process.env.API_KEY;
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
